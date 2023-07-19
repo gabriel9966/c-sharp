@@ -9,6 +9,13 @@ namespace Variaveis1
 {
     internal class Program
     {
+
+        enum notas
+        {
+            min = 10,
+            med = 20,
+            max = 30
+        }
         static void Main(string[] args)
         {
             //"Variáveis numericas inteiras
@@ -58,7 +65,9 @@ namespace Variaveis1
             const int constante = 50;
             //Console.WriteLine(constante);
 
-            //enumerações
+            //enumerações, conjunto de constantes nomeadas
+            notas nt = notas.min;
+
             
 
          
