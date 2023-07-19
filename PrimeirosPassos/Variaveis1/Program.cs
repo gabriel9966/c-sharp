@@ -10,11 +10,25 @@ namespace Variaveis1
     internal class Program
     {
 
-        enum notas
+        enum Notas
         {
             min = 10,
             med = 20,
             max = 30
+        }
+
+        /*
+         
+Uma struct em C# é uma estrutura de dados que permite agrupar diferentes tipos de dados relacionados em um único objeto.
+Ela é usada para criar tipos de valor personalizados, onde os dados são armazenados diretamente no objeto em vez
+de serem referenciados., são estruturas de dados personalizados.
+         */
+        struct Pessoa
+        {
+            public String name;
+            public int idade;
+            public double altura;
+
         }
         static void Main(string[] args)
         {
@@ -66,11 +80,35 @@ namespace Variaveis1
             //Console.WriteLine(constante);
 
             //enumerações, conjunto de constantes nomeadas
-            notas nt = notas.min;
+            Notas nt = Notas.min;
+            int valor = (int)Notas.min;
+            Console.WriteLine(valor);
 
-            
+            //struct
+            /*
+             Nesse exemplo, ao atribuir objetoClasse1 a objetoClasse2, ambas as variáveis se referem ao mesmo objeto na memória.
+            Portanto, qualquer alteração no objeto através de uma variável afetará o objeto acessado pela outra variável.
 
-         
+            Por outro lado, ao atribuir objetoStruct1 a objetoStruct2,
+            uma cópia separada do valor da struct é feita. Alterações em objetoStruct2 não afetarão objetoStruct1,
+            pois eles são cópias independentes.
+             
+             struct é por valor e não por referencia 
+             */
+            Pessoa pessoa = new Pessoa();
+            pessoa.altura = 1.78;
+            Console.WriteLine(pessoa.altura);
+            pessoa.altura = 1.80;
+            Console.WriteLine(pessoa.altura);
+            Pessoa pessoa1 = new Pessoa();
+            pessoa1.altura = 10;
+
+
+
+
+
+
+
         }
     }
 }
