@@ -1,0 +1,8 @@
+D:\programação\C#\PrimeirosPassos\Variaveis1\bin\Debug\Variaveis1.exe.config
+D:\programação\C#\PrimeirosPassos\Variaveis1\bin\Debug\Variaveis1.exe
+D:\programação\C#\PrimeirosPassos\Variaveis1\bin\Debug\Variaveis1.pdb
+D:\programação\C#\PrimeirosPassos\Variaveis1\obj\Debug\Variaveis1.csproj.AssemblyReference.cache
+D:\programação\C#\PrimeirosPassos\Variaveis1\obj\Debug\Variaveis1.csproj.SuggestedBindingRedirects.cache
+D:\programação\C#\PrimeirosPassos\Variaveis1\obj\Debug\Variaveis1.csproj.CoreCompileInputs.cache
+D:\programação\C#\PrimeirosPassos\Variaveis1\obj\Debug\Variaveis1.exe
+D:\programação\C#\PrimeirosPassos\Variaveis1\obj\Debug\Variaveis1.pdb
