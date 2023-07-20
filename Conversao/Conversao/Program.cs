@@ -28,7 +28,7 @@ namespace Conversao
 
 
             #region conversão explicita
-
+            // quando forçamos a conversão com ()
             double bmb = 98.9;
             int a;
             a = (int)bmb;
@@ -37,6 +37,11 @@ namespace Conversao
             ushort uss = 100;
             byte uss2 /*= uss*/;// não aceita ushort, ushort é 16bits
             Console.WriteLine();
+
+            int inteiro = 300000000;
+            byte intei = (byte)inteiro;
+            Console.WriteLine(intei);
+
 
 
 
