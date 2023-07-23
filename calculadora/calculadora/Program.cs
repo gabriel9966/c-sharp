@@ -13,10 +13,10 @@ namespace calculadora
             Console.WriteLine("Bem vindo a calculadora");
 
             Console.WriteLine("Digite o primeiro número");
-            int n1 = int.Parse(Console.ReadLine());//parse converte String em int
+            double n1 = double.Parse(Console.ReadLine());//parse converte String em int
 
             Console.WriteLine("Digite o segundo número");
-            int n2 = int.Parse(Console.ReadLine());
+            double n2 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Escolha a operação (+,-,*,/,%)");
             String operacao = Console.ReadLine();
