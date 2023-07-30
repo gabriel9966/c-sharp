@@ -1,0 +1,8 @@
+D:\programação\C#\c-sharp\Ciclos\Ciclos\bin\Debug\Ciclos.exe.config
+D:\programação\C#\c-sharp\Ciclos\Ciclos\bin\Debug\Ciclos.exe
+D:\programação\C#\c-sharp\Ciclos\Ciclos\bin\Debug\Ciclos.pdb
+D:\programação\C#\c-sharp\Ciclos\Ciclos\obj\Debug\Ciclos.csproj.AssemblyReference.cache
+D:\programação\C#\c-sharp\Ciclos\Ciclos\obj\Debug\Ciclos.csproj.SuggestedBindingRedirects.cache
+D:\programação\C#\c-sharp\Ciclos\Ciclos\obj\Debug\Ciclos.csproj.CoreCompileInputs.cache
+D:\programação\C#\c-sharp\Ciclos\Ciclos\obj\Debug\Ciclos.exe
+D:\programação\C#\c-sharp\Ciclos\Ciclos\obj\Debug\Ciclos.pdb
