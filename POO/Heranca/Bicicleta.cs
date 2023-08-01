@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Heranca
-{
-    internal class Bicicleta : Veiculo
+{//sealed não permite a classe ser herdada
+    internal sealed class Bicicleta : Veiculo
     {
         public void Pedalar()
         {

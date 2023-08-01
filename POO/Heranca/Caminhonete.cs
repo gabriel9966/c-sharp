@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Heranca
 {
-    internal class Caminhonete
+    internal sealed class Caminhonete
     {
+        public bool CabineExtendida { get; set; }
     }
 }
