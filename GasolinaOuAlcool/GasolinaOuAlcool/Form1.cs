@@ -40,7 +40,7 @@ namespace GasolinaOuAlcool
             Console.WriteLine("Álcool: " + alcoolPreco);
             Console.WriteLine("Razão: " + razao);
 
-            if (razao < 0.7)
+            if (razao < 0.73)
             {
                 label3.Text = "Alcool";
             }
