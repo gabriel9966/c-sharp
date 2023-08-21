@@ -125,6 +125,14 @@ namespace ManipularString
             */
             #endregion
 
+            #region Format
+
+            decimal valor = 19.95M;
+            string preco = string.Format("O valor é :{0:n3}", valor)  ;
+            label1.Text = preco;
+
+            #endregion
+
         }
     }
 }
