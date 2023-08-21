@@ -92,6 +92,39 @@ namespace ManipularString
             
             */
             #endregion
+
+            #region startWith / endWith
+            /*
+            string nome = "Gabriel";
+            bool verificar = nome.StartsWith("G");//começa com 
+            label1.Text = verificar.ToString();
+            */
+            #endregion
+
+            #region TrimStart/end
+            /*
+            string mensagem = "         Olá Gabriel      ";
+            label1.Text = ">" + mensagem.Trim() + "<";//trim = remove todos os espaços, nom começo e final
+            */
+            #endregion
+
+            #region Equals,CompareTo
+            /*
+            string nome = "Ana";
+            string nome2 = "Bia";
+            if (nome.Equals("Gabriel"))// ==
+            {
+                //label1.Text = true.ToString();
+            }
+            else
+            {
+                //label1.Text = false.ToString();
+            }
+
+            label1.Text = nome2.CompareTo(nome).ToString();//compara de forma alfabética
+            */
+            #endregion
+
         }
     }
 }
