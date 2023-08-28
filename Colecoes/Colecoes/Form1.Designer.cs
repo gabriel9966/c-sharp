@@ -31,6 +31,7 @@
             this.lista = new System.Windows.Forms.ListBox();
             this.btnList = new System.Windows.Forms.Button();
             this.btnHashSet = new System.Windows.Forms.Button();
+            this.btnDictionary = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -63,11 +64,22 @@
             this.btnHashSet.UseVisualStyleBackColor = true;
             this.btnHashSet.Click += new System.EventHandler(this.btnHashSet_Click);
             // 
+            // btnDictionary
+            // 
+            this.btnDictionary.Location = new System.Drawing.Point(552, 159);
+            this.btnDictionary.Name = "btnDictionary";
+            this.btnDictionary.Size = new System.Drawing.Size(187, 50);
+            this.btnDictionary.TabIndex = 3;
+            this.btnDictionary.Text = "Dictionary";
+            this.btnDictionary.UseVisualStyleBackColor = true;
+            this.btnDictionary.Click += new System.EventHandler(this.btnDictionary_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDictionary);
             this.Controls.Add(this.btnHashSet);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.lista);
@@ -82,6 +94,7 @@
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.Button btnHashSet;
+        private System.Windows.Forms.Button btnDictionary;
     }
 }
 

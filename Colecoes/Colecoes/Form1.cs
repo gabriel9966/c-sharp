@@ -62,7 +62,53 @@ namespace Colecoes
         {
             lista.Items.Clear();
 
-            HashSet<string> hashSet = new HashSet<string>();//não aceita itens repetidos
+            HashSet<string> veiculos = new HashSet<string>();//não aceita itens repetidos
+            veiculos.Add("Mustang");
+            veiculos.Add("Celta");
+            veiculos.Add("Spin");
+            veiculos.Add("Fiesta");
+            veiculos.Add("911");
+
+
+            /*if (veiculos.Add("Mustang"))
+            {
+                MessageBox.Show("Veículo adicionado");
+            }
+            else
+            {
+                MessageBox.Show("Veículo não adicionado");
+            }
+
+            if (veiculos.Contains("Celta"))
+            {
+                MessageBox.Show("Contém o celta");
+            }
+            else
+            {
+                MessageBox.Show("Não contém");
+            }
+            veiculos.Remove("Spin");
+
+            MessageBox.Show(veiculos.Count.ToString());//conta todos os elementos
+            */
+            //MessageBox.Show(veiculos.First());
+            //MessageBox.Show(veiculos.Last());
+            foreach(string veiculo in veiculos)
+            {
+                lista.Items.Add(veiculo);
+            }
+        }
+
+        private void btnDictionary_Click(object sender, EventArgs e)
+        {
+            Dictionary<int,string> alunos = new Dictionary<int, string>();
+            alunos.Add(1, "Gabriel");
+            alunos.Add(2, "João");
+
+            foreach(KeyValuePair<int,string> item in alunos)//tipo específico
+            {
+                lista.Items.Add(item);
+            }
         }
     }
 }
