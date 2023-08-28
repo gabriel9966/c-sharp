@@ -1,0 +1,10 @@
+D:\programação\C#\c-sharp\Colecoes\Colecoes\bin\Debug\Colecoes.exe.config
+D:\programação\C#\c-sharp\Colecoes\Colecoes\bin\Debug\Colecoes.exe
+D:\programação\C#\c-sharp\Colecoes\Colecoes\bin\Debug\Colecoes.pdb
+D:\programação\C#\c-sharp\Colecoes\Colecoes\obj\Debug\Colecoes.csproj.AssemblyReference.cache
+D:\programação\C#\c-sharp\Colecoes\Colecoes\obj\Debug\Colecoes.Form1.resources
+D:\programação\C#\c-sharp\Colecoes\Colecoes\obj\Debug\Colecoes.Properties.Resources.resources
+D:\programação\C#\c-sharp\Colecoes\Colecoes\obj\Debug\Colecoes.csproj.GenerateResource.cache
+D:\programação\C#\c-sharp\Colecoes\Colecoes\obj\Debug\Colecoes.csproj.CoreCompileInputs.cache
+D:\programação\C#\c-sharp\Colecoes\Colecoes\obj\Debug\Colecoes.exe
+D:\programação\C#\c-sharp\Colecoes\Colecoes\obj\Debug\Colecoes.pdb

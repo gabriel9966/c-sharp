@@ -2,7 +2,6 @@ D:\programação\C#\c-sharp\SistemaLogin\SistemaLogin\bin\Debug\SistemaLogin.exe
 D:\programação\C#\c-sharp\SistemaLogin\SistemaLogin\bin\Debug\SistemaLogin.exe
 D:\programação\C#\c-sharp\SistemaLogin\SistemaLogin\bin\Debug\SistemaLogin.pdb
 D:\programação\C#\c-sharp\SistemaLogin\SistemaLogin\obj\Debug\SistemaLogin.csproj.AssemblyReference.cache
-D:\programação\C#\c-sharp\SistemaLogin\SistemaLogin\obj\Debug\SistemaLogin.csproj.SuggestedBindingRedirects.cache
 D:\programação\C#\c-sharp\SistemaLogin\SistemaLogin\obj\Debug\SistemaLogin.Form1.resources
 D:\programação\C#\c-sharp\SistemaLogin\SistemaLogin\obj\Debug\SistemaLogin.Properties.Resources.resources
 D:\programação\C#\c-sharp\SistemaLogin\SistemaLogin\obj\Debug\SistemaLogin.csproj.GenerateResource.cache

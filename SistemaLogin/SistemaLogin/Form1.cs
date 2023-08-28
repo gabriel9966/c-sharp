@@ -24,7 +24,25 @@ namespace SistemaLogin
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            FormsLogin f = new FormsLogin();
+            //f.ShowDialog();//ShowDialog():
+            //Exibe um formulário como uma
+            //janela modal, bloqueando o código até
+            //que o formulário seja fechado.,,
 
+            while (CadastroUsuarios.UsuarioLogado == null) 
+            {
+                Visible = false;
+                f.ShowDialog();
+
+                if(FormsLogin.cancelar == true)
+                {
+                    Application.Exit();
+                    return;
+                }
+            }
+            label_BoasVindas.Text = "Bem vindo(a) "+CadastroUsuarios.UsuarioLogado.Nome;
+            Visible = true;
         }
     }
 }

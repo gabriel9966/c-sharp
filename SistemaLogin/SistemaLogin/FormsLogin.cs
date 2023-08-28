@@ -12,6 +12,9 @@ namespace SistemaLogin
 {
     public partial class FormsLogin : Form
     {
+
+        public static bool cancelar = false;
+
         public FormsLogin()
         {
             InitializeComponent();
@@ -20,6 +23,29 @@ namespace SistemaLogin
         private void FormsLogin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            
+
+            if (CadastroUsuarios.Login(txtUsuario.Text,txtSenha.Text))
+            {
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Acesso negado!");
+                txtUsuario.Text = "";
+                txtSenha.Text = "";
+                txtUsuario.Focus();
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+            cancelar = true;
         }
     }
 }

@@ -59,6 +59,7 @@
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(48, 194);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(709, 53);
             this.txtSenha.TabIndex = 3;
             // 
@@ -68,9 +69,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(43, 157);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 25);
+            this.label2.Size = new System.Drawing.Size(76, 25);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Usuário:";
+            this.label2.Text = "Senha:";
             // 
             // btnCancelar
             // 
@@ -79,8 +80,9 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(293, 74);
             this.btnCancelar.TabIndex = 4;
-            this.btnCancelar.Text = "cancelar";
+            this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnEntrar
             // 
@@ -89,8 +91,9 @@
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(293, 74);
             this.btnEntrar.TabIndex = 5;
-            this.btnEntrar.Text = "cancelar";
+            this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // FormsLogin
             // 
