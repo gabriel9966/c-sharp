@@ -107,10 +107,40 @@ namespace Colecoes
             alunos.Add(3, "Kauan");
             alunos.Add(4, "Lucas");
             alunos.Remove(1);
+            //lista.Items.Clear();
+
+            KeyValuePair<int,string> primeiro = alunos.First();
+            MessageBox.Show("Primeiro item :" + primeiro.Value);
+            ;
+            if (alunos.ContainsKey(3))
+            {
+                MessageBox.Show("Contém");
+            }else
+            {
+                MessageBox.Show("Não contém ");
+            }
+
             foreach(KeyValuePair<int,string> item in alunos)//tipo específico
             {
-                lista.Items.Add(item);
+                lista.Items.Add(item.Key + " = "+item.Value);
             }
+        }
+
+        private void btnSortedList_Click(object sender, EventArgs e)
+        {
+            //Lista ordenada (chave , valor), com base na chave
+            SortedList<int, string> alunos = new SortedList<int, string>();
+            alunos.Add(1, "Gabriel");
+            alunos.Add(0, "Lucas");
+            alunos.Add(3, "Larissa");
+            alunos.Add(2, "Rafaela");
+            lista.Items.Clear();
+            alunos.Remove(2);
+            foreach(var i in alunos)
+            {
+                lista.Items.Add(i);
+            }
+
         }
     }
 }
