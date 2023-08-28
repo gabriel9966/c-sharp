@@ -104,7 +104,9 @@ namespace Colecoes
             Dictionary<int,string> alunos = new Dictionary<int, string>();
             alunos.Add(1, "Gabriel");
             alunos.Add(2, "João");
-
+            alunos.Add(3, "Kauan");
+            alunos.Add(4, "Lucas");
+            alunos.Remove(1);
             foreach(KeyValuePair<int,string> item in alunos)//tipo específico
             {
                 lista.Items.Add(item);
