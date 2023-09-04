@@ -33,6 +33,10 @@
             this.btnHashSet = new System.Windows.Forms.Button();
             this.btnDictionary = new System.Windows.Forms.Button();
             this.btnSortedList = new System.Windows.Forms.Button();
+            this.btnSortedDictionary = new System.Windows.Forms.Button();
+            this.sortedSet = new System.Windows.Forms.Button();
+            this.btnQueue = new System.Windows.Forms.Button();
+            this.btnStack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -47,7 +51,7 @@
             // 
             // btnList
             // 
-            this.btnList.Location = new System.Drawing.Point(552, 13);
+            this.btnList.Location = new System.Drawing.Point(552, 3);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(187, 50);
             this.btnList.TabIndex = 1;
@@ -57,7 +61,7 @@
             // 
             // btnHashSet
             // 
-            this.btnHashSet.Location = new System.Drawing.Point(552, 90);
+            this.btnHashSet.Location = new System.Drawing.Point(552, 59);
             this.btnHashSet.Name = "btnHashSet";
             this.btnHashSet.Size = new System.Drawing.Size(187, 50);
             this.btnHashSet.TabIndex = 2;
@@ -67,7 +71,7 @@
             // 
             // btnDictionary
             // 
-            this.btnDictionary.Location = new System.Drawing.Point(552, 159);
+            this.btnDictionary.Location = new System.Drawing.Point(552, 115);
             this.btnDictionary.Name = "btnDictionary";
             this.btnDictionary.Size = new System.Drawing.Size(187, 50);
             this.btnDictionary.TabIndex = 3;
@@ -77,7 +81,7 @@
             // 
             // btnSortedList
             // 
-            this.btnSortedList.Location = new System.Drawing.Point(552, 226);
+            this.btnSortedList.Location = new System.Drawing.Point(552, 171);
             this.btnSortedList.Name = "btnSortedList";
             this.btnSortedList.Size = new System.Drawing.Size(187, 50);
             this.btnSortedList.TabIndex = 4;
@@ -85,11 +89,55 @@
             this.btnSortedList.UseVisualStyleBackColor = true;
             this.btnSortedList.Click += new System.EventHandler(this.btnSortedList_Click);
             // 
+            // btnSortedDictionary
+            // 
+            this.btnSortedDictionary.Location = new System.Drawing.Point(552, 227);
+            this.btnSortedDictionary.Name = "btnSortedDictionary";
+            this.btnSortedDictionary.Size = new System.Drawing.Size(187, 50);
+            this.btnSortedDictionary.TabIndex = 5;
+            this.btnSortedDictionary.Text = "SortedDictionary";
+            this.btnSortedDictionary.UseVisualStyleBackColor = true;
+            this.btnSortedDictionary.Click += new System.EventHandler(this.btnSortedDictionary_Click);
+            // 
+            // sortedSet
+            // 
+            this.sortedSet.Location = new System.Drawing.Point(552, 283);
+            this.sortedSet.Name = "sortedSet";
+            this.sortedSet.Size = new System.Drawing.Size(187, 50);
+            this.sortedSet.TabIndex = 6;
+            this.sortedSet.Text = "SortedSet\r\n";
+            this.sortedSet.UseVisualStyleBackColor = true;
+            this.sortedSet.Click += new System.EventHandler(this.sortedSet_Click);
+            // 
+            // btnQueue
+            // 
+            this.btnQueue.Location = new System.Drawing.Point(552, 339);
+            this.btnQueue.Name = "btnQueue";
+            this.btnQueue.Size = new System.Drawing.Size(187, 50);
+            this.btnQueue.TabIndex = 7;
+            this.btnQueue.Text = "Queue\r\n";
+            this.btnQueue.UseVisualStyleBackColor = true;
+            this.btnQueue.Click += new System.EventHandler(this.btnQueue_Click);
+            // 
+            // btnStack
+            // 
+            this.btnStack.Location = new System.Drawing.Point(552, 395);
+            this.btnStack.Name = "btnStack";
+            this.btnStack.Size = new System.Drawing.Size(187, 50);
+            this.btnStack.TabIndex = 8;
+            this.btnStack.Text = "Stack";
+            this.btnStack.UseVisualStyleBackColor = true;
+            this.btnStack.Click += new System.EventHandler(this.btnStack_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnStack);
+            this.Controls.Add(this.btnQueue);
+            this.Controls.Add(this.sortedSet);
+            this.Controls.Add(this.btnSortedDictionary);
             this.Controls.Add(this.btnSortedList);
             this.Controls.Add(this.btnDictionary);
             this.Controls.Add(this.btnHashSet);
@@ -108,6 +156,10 @@
         private System.Windows.Forms.Button btnHashSet;
         private System.Windows.Forms.Button btnDictionary;
         private System.Windows.Forms.Button btnSortedList;
+        private System.Windows.Forms.Button btnSortedDictionary;
+        private System.Windows.Forms.Button sortedSet;
+        private System.Windows.Forms.Button btnQueue;
+        private System.Windows.Forms.Button btnStack;
     }
 }
 

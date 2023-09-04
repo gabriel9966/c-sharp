@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.Design;
 
 namespace Colecoes
 {
@@ -141,6 +142,87 @@ namespace Colecoes
                 lista.Items.Add(i);
             }
 
+        }
+
+        private void btnSortedDictionary_Click(object sender, EventArgs e)
+        {
+            SortedDictionary<int,string> nomes = new SortedDictionary<int,string>();
+            nomes.Add(1, "Gabriel");
+            nomes.Add(5, "Lucas");
+            nomes.Add(8, "Livia");
+            nomes.Add(3, "Roberto");
+            nomes.Add(6, "Roberto");
+
+            MessageBox.Show(nomes.Count.ToString());
+            lista.Items.Clear();
+            foreach(var i in nomes)
+            {
+                lista.Items.Add(i);
+            }
+        }
+
+        private void sortedSet_Click(object sender, EventArgs e)
+        {
+            SortedSet<string> ss = new SortedSet<string>()//não aceita repetido e é classificada em ordem alfabético
+            {
+                "Gabriel","Arthur","Flávio","Beatriz","Danny"
+            };
+            lista.Items.Clear();
+            ;
+
+            if (!ss.Add("Arthur"))//! negação
+            {
+                MessageBox.Show("Não pode repetir elementos");
+            }
+
+            MessageBox.Show("Primeiro elemento :" + ss.ElementAt(0));
+
+            foreach(var i in ss)
+            {
+                lista.Items.Add(i);
+            }
+        }
+
+        private void btnQueue_Click(object sender, EventArgs e)
+        {
+            Queue<string> fila  = new Queue<string>();
+            fila.Enqueue("Gabriel");
+            fila.Enqueue("Felipe");
+            fila.Enqueue("Lucas");
+
+            MessageBox.Show(fila.Count.ToString());
+            lista.Items.Clear();
+
+            MessageBox.Show(fila.Dequeue().ToString());//retorna e remove o primeiro da fila
+
+            foreach (var i in fila)
+            {
+                lista.Items.Add(i);
+            }
+
+            MessageBox.Show(fila.Peek().ToString());//primeiro elemento da fila, mas não remove
+
+            
+        }
+
+        private void btnStack_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear ();
+            Stack<string> pilha = new Stack<string>();
+
+            pilha.Push("Gabriel");//vai inserir no topo da pilha
+            pilha.Push("Felipe");
+            pilha.Push("Lucas");
+
+            MessageBox.Show(pilha.Count.ToString());
+
+            foreach (var item in pilha)
+            {
+                lista.Items.Add(item);
+            }
+
+            MessageBox.Show(pilha.Peek().ToString());//retorna o elemento no topo
+            // pop , apresenta e remove o elemento
         }
     }
 }
