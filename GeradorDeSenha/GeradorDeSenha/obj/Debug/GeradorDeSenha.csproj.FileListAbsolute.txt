@@ -1,0 +1,10 @@
+D:\programação\C#\c-sharp\GeradorDeSenha\GeradorDeSenha\obj\Debug\GeradorDeSenha.csproj.AssemblyReference.cache
+D:\programação\C#\c-sharp\GeradorDeSenha\GeradorDeSenha\obj\Debug\GeradorDeSenha.Form1.resources
+D:\programação\C#\c-sharp\GeradorDeSenha\GeradorDeSenha\obj\Debug\GeradorDeSenha.Properties.Resources.resources
+D:\programação\C#\c-sharp\GeradorDeSenha\GeradorDeSenha\obj\Debug\GeradorDeSenha.csproj.GenerateResource.cache
+D:\programação\C#\c-sharp\GeradorDeSenha\GeradorDeSenha\obj\Debug\GeradorDeSenha.csproj.CoreCompileInputs.cache
+D:\programação\C#\c-sharp\GeradorDeSenha\GeradorDeSenha\bin\Debug\GeradorDeSenha.exe.config
+D:\programação\C#\c-sharp\GeradorDeSenha\GeradorDeSenha\bin\Debug\GeradorDeSenha.exe
+D:\programação\C#\c-sharp\GeradorDeSenha\GeradorDeSenha\bin\Debug\GeradorDeSenha.pdb
+D:\programação\C#\c-sharp\GeradorDeSenha\GeradorDeSenha\obj\Debug\GeradorDeSenha.exe
+D:\programação\C#\c-sharp\GeradorDeSenha\GeradorDeSenha\obj\Debug\GeradorDeSenha.pdb
