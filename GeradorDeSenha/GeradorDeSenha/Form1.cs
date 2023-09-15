@@ -40,42 +40,35 @@ namespace GeradorDeSenha
             //Letras b
             //Caracteres c
 
+            
+
             if (a > 0)
             {
                 for(int i = 0; i < a; i++)
                 {
-                    senha.Append(numeros[rd.Next(numeros.Count)]);
+                    senha += (numeros[rd.Next(0,numeros.Count)]);
                     
                 }
             }
-            else
-            {
-                MessageBox.Show("Coloque um valor positivo");
-            }
+            
 
             if (b > 0)
             {
-                for (int i = 0; i < a; i++)
+                for (int i = 0; i < b; i++)
                 {
-                    senha.Append(letras[rd.Next(letras.Count)]);
+                    senha += (letras[rd.Next(0,letras.Count)]);
                 }
             }
-            else
-            {
-                MessageBox.Show("Coloque um valor positivo");
-            }
+            
 
             if (c > 0)
             {
-                for (int i = 0; i < a; i++)
+                for (int i = 0; i < c; i++)
                 {
-                    senha.Append(caracteres[rd.Next(caracteres.Count)]);
+                    senha += (caracteres[rd.Next(0,caracteres.Count)]);
                 }
             }
-            else
-            {
-                MessageBox.Show("Coloque um valor positivo");
-            }
+            
 
             if (senha != "")
             {
@@ -86,33 +79,84 @@ namespace GeradorDeSenha
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
-            if(checkBoxN.Checked == true)
+            label1.Text = "";
+            senha = "";
+            if (checkBoxL.Checked == true || checkBoxC.Checked == true || checkBoxN.Checked == true)
             {
                 
-                gerar(int.Parse(txtNnumeros.Text));
-            }
+                if (checkBoxC.Checked == true)
+                {
+                    try
+                    {
+                        if (int.Parse(txtNcaracteres.Text) > 0)
+                        {
+                            gerar(0, 0, int.Parse(txtNcaracteres.Text));
+                        }
+                        else
+                        {
+                            MessageBox.Show("Coloque um número inteiro e positivo");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Coloque um número inteiro e positivo");
+                    };
 
-            if(checkBoxC.Checked == true) 
-            {
+                   
+                    
+                }
+
+                if(checkBoxL.Checked == true)
+                {
+                    try
+                    {
+                        if (int.Parse(txtNLetras.Text) > 0)
+                        {
+                            gerar(0, int.Parse(txtNLetras.Text), 0);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Coloque um número inteiro e positivo");
+                        }
+                    }
+                    
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Coloque um número inteiro e positivo");
+                    };
+                }
                 
-                gerar(0,int.Parse(txtNcaracteres.Text));
+
+                if (checkBoxN.Checked == true)
+                {
+                    try
+                    {
+                        if (int.Parse(txtNnumeros.Text) > 0)
+                        {
+                            gerar(int.Parse(txtNnumeros.Text), 0, 0);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Coloque um número inteiro e positivo");
+                        }
+                    }
+                    
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show("Coloque um número inteiro e positivo");
+                    };
+                }
+            }
+            else
+            {
+                MessageBox.Show("Marque pelo menos um Tipo ");
             }
 
-            if (checkBoxL.Checked == true )
-            {
-                
-                gerar(0,0,int.Parse(txtNLetras.Text));
-            }
 
-            if (checkBoxC.Checked == false && checkBoxL.Checked == false && checkBoxN.Checked == false)
-            {
-                MessageBox.Show("Marque pelo menos uma opção!");
-            }
 
             
         }
-
+        // Limpa as caixas de texto
         private void checkBoxL_CheckedChanged(object sender, EventArgs e)
         {
             txtNLetras.Clear();

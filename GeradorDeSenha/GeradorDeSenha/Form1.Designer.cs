@@ -55,6 +55,7 @@
             this.txtNLetras.Size = new System.Drawing.Size(100, 22);
             this.txtNLetras.TabIndex = 1;
             this.txtNLetras.Text = "N Letras";
+            this.txtNLetras.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNnumeros
             // 
@@ -63,6 +64,7 @@
             this.txtNnumeros.Size = new System.Drawing.Size(100, 22);
             this.txtNnumeros.TabIndex = 2;
             this.txtNnumeros.Text = "N Números";
+            this.txtNnumeros.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNcaracteres
             // 
@@ -71,6 +73,7 @@
             this.txtNcaracteres.Size = new System.Drawing.Size(100, 22);
             this.txtNcaracteres.TabIndex = 3;
             this.txtNcaracteres.Text = "N caracter esp";
+            this.txtNcaracteres.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // checkBoxL
             // 
