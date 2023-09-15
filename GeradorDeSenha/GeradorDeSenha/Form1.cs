@@ -138,6 +138,7 @@ namespace GeradorDeSenha
                         else
                         {
                             MessageBox.Show("Coloque um número inteiro e positivo");
+
                         }
                     }
                     
